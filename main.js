@@ -169,7 +169,7 @@ console.assert(ex.id === 'tricky');
 ex = whatsThis.bind(obj.inner).call(location);
 
 // The statement will return --> 'inner-object'
-
+// Since whatsThis.bind(obj.inner) then the function will return the binded object. The binded object is obj.inner and that object will log 'inner-object'.
 console.assert(ex.id === 'inner-object');
 
 
